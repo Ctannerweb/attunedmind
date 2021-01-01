@@ -1,2 +1,1 @@
-# attunedmind
-Attuned Mind landing page
+# Attuned Mind
