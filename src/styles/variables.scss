@@ -1,0 +1,25 @@
+:root {
+  /* BASE COLORS */
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(360, 100%, 100%);
+  --color-background: hsl(138, 42%, 86%);
+
+  /* GRAYS */
+  --color-gray-1: hsl(0, 0%, 98%);
+  --color-gray-2: hsl(0, 15%, 90%);
+  --color-gray-3: hsl(0, 0%, 60%);
+  --color-gray-4: hsl(0, 0%, 30%);
+  --color-gray-5: hsl(0, 0%, 11%);
+
+  /* FONT FAMILIES */
+  --font-mukta: 'Mukta', sans-serif;
+  --font-noto-sans: 'Noto Sans', sans-serif;
+
+  /* FONT WEIGHTS */
+  --weight-regular: 400;
+  --weight-semi-bold: 600;
+  --weight-extra-bold: 800;
+
+  /* TRANSITION */
+  --global-transition: .3s ease;
+}

@@ -1,0 +1,119 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding:0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  list-style: none;
+}
+
+li {
+  padding-left: 1.5em;
+  position: relative;
+
+  &::before {
+    content:"";
+    margin-left: -1.5em;
+    margin-top: .111em;
+    height: .834em;
+    width: .834em;
+    display: block;
+    float: left;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ1NS42MzMgNDQ4LjUxLTE5OS42MzMtNDQ4LjUxLTE5OS42MzMgNDQ4LjUxaDE4NC4yNjh2NjMuNDloMzAuNzI5di02My40OXptLTE5OS42MzMtMzcyLjk0MyAxNTIuMzIgMzQyLjIxNGgtMTM2Ljk1NnYtNDcuMDk0bDM1LjQ5NyAxNy4xNjcgMTMuMzc5LTI3LjY2NC00OC44NzYtMjMuNjM3di00My43NzNsMzUuNTA2IDE3LjE0MSAxMy4zNi0yNy42NzItNjQuMjQ0LTMxLjAxNi02NC4yMzkgMzEuMTM3IDEzLjQwMyAyNy42NTIgMzUuNDg1LTE3LjE5OXY0My43MzNsLTQ4Ljg3OSAyMy42NTMgMTMuMzg1IDI3LjY2IDM1LjQ5NC0xNy4xNzV2NDcuMDg4aC0xMzYuOTU1eiIvPjwvc3ZnPg==");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 100%;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: var(--font-noto-sans);
+  line-height: 1;
+  background-color: var(--color-brand-1);
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  line-height: normal;
+  text-align: left;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.App {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+  "hero"
+  "main"
+  "footer";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+}
