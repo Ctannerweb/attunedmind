@@ -32,7 +32,10 @@ function App() {
           <path d="M824.74 785.26h140.62" fill="none" stroke="#172226" stroke-miterlimit="10" stroke-width="2"/>
         </svg>
       </main>
-      <footer className="t-footer temp-footer">Site coming soon</footer>
+      <footer className="t-footer temp-footer">
+        <p className="temp-footer__copy">Site coming soon</p>
+        <a href="mailto:rebecca@attunedmind.com" className="t-link temp-footer__email">rebecca@attunedmind.com</a>
+      </footer>
     </div>
   );
 }
