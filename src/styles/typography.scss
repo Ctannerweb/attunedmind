@@ -39,3 +39,21 @@
     font-size: var(--type-scale-32);
   } 
 }
+
+.t-footer {
+  text-decoration: none;
+  font-size: var(--type-scale-18);
+  font-weight: var(--weight-bold);
+  line-height: 1.19;
+  letter-spacing: 1px;
+}
+
+.t-hidden {
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
